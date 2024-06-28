@@ -1,5 +1,41 @@
+.nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo.icon {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+
+    background-image: url(https://picsum.photos/500/500);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav>a{
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;
+}
+
+.banner.container {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.profile.content {
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+.profile.item {
+    text-align: center;
+}
+
+.profile.icon {
+    height: 50px;
+    width: 50px;
     border: 1px solid;
 }
