@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <header class="nav.container">
-        <div class="logo.icon"></div>
+    <header class="navcontainer">
+        <div class="logoicon" style="background-image: url(assets/1.jpg);"> </div>
 
         <nav>
             <a>Home</a>
-            <a>Our Profile</a>
+            <a href="#our-profile">Our Profile</a>
             <a>Portfolio</a>
             <a>Message Us</a>
         </nav>
@@ -29,7 +29,7 @@
 
             <article>
                 <p> Ini adalah website portfolio saya</p>
-                <div class="banner.container"></div>
+                <div class="bannercontainer"></div>
             </article>
         </section>
 
@@ -38,24 +38,54 @@
                 <h1>Our Profile</h1>
             </header>
 
-            <article class="profile.content">
-                <div class="profile.item">
-                    <div class="profile.icon"></div>
+            <article class="profilecontent">
+                <div class="profileitem">
+                    <div class="profileicon"></div>
                     <p>Profile 1</p>
                 </div>
 
                 <div>
-                    <div class="profile.icon"></div>
+                    <div class="profileicon"></div>
                     <p>Profile 2</p>
                 </div>
 
                 <div>
-                    <div class="profile.icon"></div>
+                    <div class="profileicon"></div>
                     <p>Profile 3</p>
                 </div>
             </article>
         </section>
+
+        <section>
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <article style="display: flex; justify-content: space-between;">
+                <form>
+                    <table>
+                        <tr>
+                            <td><label for="firtsname">Firstname :</label></td>
+                            <td><input type="text" id="firtsname" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastname">Lastname :</label></td>
+                            <td><input type="text" id="lastname" required></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <button type="button" onclick="validatefrom()">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <div id="result" style="border: 1px solid; height: 100px; width: 100px;"></div>
+            </article>
+        </section>
     </main>
 
+    <script src="js/script.js"></script>
 </body>
+
 </html>
